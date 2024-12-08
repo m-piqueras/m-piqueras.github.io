@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Mario Piqueras - Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,40 +17,52 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="about">
-        <h1>Sobre mí</h1>
-        <p>Hola, soy un ingeniero de telecomunicaciones con experiencia en varios tipos de proyectos,
-            en ramas de electrónica, telemática, sonido e imagen y sistemas. Aparte de los que he realizado
-            con la universidad, también he trabajado en otros por mi propia cuenta, ya que me resultaban 
-            temas muy interesantes. Entre mis intereses, predominan el machine learning y deep learning, 
-            la electrónica de antenas y espacial, la ciberseguridad y la encriptación de datos y el tratamiento
-            digital de señales.
-        </p>
+        <div class="container">
+            <h1>Sobre mí</h1>
+            <p>
+                Hola, soy un ingeniero de telecomunicaciones con experiencia en diversos proyectos relacionados 
+                con electrónica, telemática, sonido e imagen, y sistemas. Me apasionan áreas como el machine learning, 
+                deep learning, ciberseguridad y el tratamiento digital de señales. Siempre estoy explorando nuevas tecnologías y desafiándome a mí mismo.
+            </p>
+        </div>
     </section>
 
     <section id="projects">
-        <h1>Mis Proyectos</h1>
-        <div class="project">
-            <h2>Clasificador de Señales</h2>
-            <p>La clasificación de señales es una tarea crítica en comunicaciones, especialmente en sistemas 
-                inalámbricos. Este proceso consiste en identificar el tipo de modulación de una señal recibida
-                basándose en sus características. Sin embargo, las señales reales suelen enfrentarse a desafíos
-                como el ruido y los efectos de fading, que afectan su calidad.</p>
-            <h2>Tratamiento de Señales Genómicas</h2>
-            <p>Este proyecto tiene como objetivo desarrollar un sistema de clasificación para identificar 
-                regiones codificantes y no codificantes en secuencias de ADN utilizando técnicas de procesamiento
-                digital de señales (DSP) y aprendizaje automático. A través de la entropía de nucleótidos y dinucleótidos,
-                se extraen características que permiten diferenciar entre estas dos clases de regiones.</p>
-                <a href="#">Ver más</a>
+        <div class="container">
+            <h1>Mis Proyectos</h1>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="project1.jpg" alt="Clasificador de Señales">
+                    <h2>Clasificador de Señales</h2>
+                    <p>
+                        Este proyecto utiliza algoritmos avanzados de machine learning para identificar modulaciones en sistemas inalámbricos bajo ruido y fading.
+                    </p>
+                    <a href="#">Ver más</a>
+                </div>
+                <div class="card">
+                    <img src="project2.jpg" alt="Tratamiento de Señales Genómicas">
+                    <h2>Tratamiento de Señales Genómicas</h2>
+                    <p>
+                        Identificación de regiones codificantes y no codificantes en ADN utilizando técnicas de DSP y aprendizaje automático.
+                    </p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h1>Contacto</h1>
-        <p>Si quieres saber más sobre mi trabajo, ¡no dudes en contactarme!
-            mario.piqueras.miro@gmail.com
-        </p>
+        <div class="container">
+            <h1>Contacto</h1>
+            <form>
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
