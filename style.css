@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(315deg, #c6a3e0, #4a1f8b); /* Degradado lila a morado oscuro */
+    background: linear-gradient(225deg, #4a1f8b,  #c6a3e0); /* Degradado lila a morado oscuro */
     color: #333;
 }
 
@@ -39,7 +39,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #d4b9ff; /* Un lila suave para hover */
+    color: #f39c12; /* Amarillo brillante para hover */
 }
 
 /* Main Content Styles */
@@ -95,7 +95,7 @@ p {
 }
 
 .collapsible:hover {
-    background-color: #9b7fba; /* Lila suave para hover */
+    background-color: #f39c12; /* Amarillo brillante para hover */
 }
 
 /* Contenido desplegable */
@@ -159,7 +159,7 @@ p {
 
 .card a {
     text-decoration: none;
-    color: #f1c40f; /* Amarillo suave */
+    color: #f39c12; /* Amarillo brillante */
     font-weight: 700;
     margin-top: 10px;
     display: inline-block;
@@ -167,7 +167,7 @@ p {
 }
 
 .card a:hover {
-    color: #f39c12; /* Amarillo más brillante */
+    color: #f1c40f; /* Amarillo más suave y cálido */
 }
 
 /* Form Styles */
@@ -200,7 +200,7 @@ form button {
 }
 
 form button:hover {
-    background: #9b7fba; /* Lila suave para hover */
+    background: #f39c12; /* Amarillo brillante para hover */
 }
 
 /* Footer Styles */
