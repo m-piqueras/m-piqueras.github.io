@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(225deg, #4a1f8b,  #c6a3e0); /* Degradado lila a morado oscuro */
+    background: linear-gradient(315deg, #d3a4f4, #4b0082); /* Degradado de lila a morado oscuro */
     color: #333;
 }
 
@@ -12,8 +12,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #6e4f95; /* Un morado intermedio */
-    color: #f1f1f1; /* Blanco suave */
+    background: #d5a0f2;
+    color: #8af2ff; /* Azul claro */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -32,14 +32,17 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #f1f1f1; /* Blanco suave */
+    color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
 header nav ul li a:hover {
-    color: #f39c12; /* Amarillo brillante para hover */
+    color: #f39c12; /* Amarillo suave */
+    border-color: #f39c12; /* Subrayado dorado */
 }
 
 /* Main Content Styles */
@@ -50,7 +53,7 @@ main {
 section {
     padding: 50px 20px;
     margin: 40px 0;
-    background: #ffffff; /* Fondo blanco para mayor legibilidad */
+    background: white;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 900px;
@@ -66,20 +69,20 @@ section {
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #6e4f95; /* Color morado suave */
+    color: #6a4c93; /* Color morado */
     text-align: center;
 }
 
 p {
     font-size: 1em;
     line-height: 1.6;
-    color: #666; /* Gris oscuro */
+    color: #555;
     text-align: justify;
 }
 
 /* Botón desplegable */
 .collapsible {
-    background-color: #6e4f95; /* Morado suave */
+    background-color: #6a4c93;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -89,27 +92,28 @@ p {
     outline: none;
     font-size: 1.2em;
     font-weight: bold;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .collapsible:hover {
-    background-color: #f39c12; /* Amarillo brillante para hover */
+    background-color: #9b5fc0; /* Color más claro para hover */
+    border: 2px solid #f39c12; /* Borde dorado para hover */
 }
 
 /* Contenido desplegable */
 .content {
     padding: 0 15px;
-    margin-top: 10px;
+    margin-top: 1px;
     margin-bottom: 20px;
     overflow: hidden;
-    background-color: #f9f9f9; /* Fondo gris muy suave */
+    background-color: #f4f4f8;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-height: 0; /* Comienza cerrado */
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.3s ease-out; /* transición para mostrar/ocultar el contenido */
 }
 
 .content p {
@@ -127,17 +131,18 @@ p {
 }
 
 .card {
-    background: #fff;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
     padding: 20px;
 }
 
 .card:hover {
     transform: scale(1.05);
+    border: 2px solid #f39c12; /* Borde dorado en el hover */
 }
 
 .card img {
@@ -148,8 +153,7 @@ p {
 .card h2 {
     margin: 15px 0;
     font-size: 1.5em;
-    color: #6e4f95; /* Morado suave */
-    transition: background 0.3s ease;
+    color: #6a4c93;
 }
 
 .card p {
@@ -159,7 +163,7 @@ p {
 
 .card a {
     text-decoration: none;
-    color: #f39c12; /* Amarillo brillante */
+    color: #6a4c93; /* Color morado en enlace */
     font-weight: 700;
     margin-top: 10px;
     display: inline-block;
@@ -167,7 +171,7 @@ p {
 }
 
 .card a:hover {
-    color: #f1c40f; /* Amarillo más suave y cálido */
+    color: #f39c12; /* Enlace se vuelve dorado en hover */
 }
 
 /* Form Styles */
@@ -188,7 +192,7 @@ form input, form textarea {
 }
 
 form button {
-    background: #6e4f95;
+    background: #6a4c93;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -196,17 +200,18 @@ form button {
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 form button:hover {
-    background: #f39c12; /* Amarillo brillante para hover */
+    background: #8e44ad; /* Morado más suave */
+    border: 2px solid #f39c12; /* Borde dorado en el hover */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    background: #6e4f95;
+    background: #6a4c93;
     color: white;
     padding: 15px 0;
     margin-top: 40px;
