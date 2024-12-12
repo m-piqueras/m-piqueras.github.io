@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(315deg, #d3a4f4, #4b0082); /* Degradado de lila a morado oscuro */
+    background: linear-gradient(315deg, #c6a3e0, #4a1f8b); /* Degradado lila a morado oscuro */
     color: #333;
 }
 
@@ -12,8 +12,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #d5a0f2;
-    color: #8af2ff; /* Azul claro */
+    background: #6e4f95; /* Un morado intermedio */
+    color: #f1f1f1; /* Blanco suave */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -32,14 +32,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #f1f1f1; /* Blanco suave */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #d4d4ff;
+    color: #d4b9ff; /* Un lila suave para hover */
 }
 
 /* Main Content Styles */
@@ -50,7 +50,7 @@ main {
 section {
     padding: 50px 20px;
     margin: 40px 0;
-    background: white;
+    background: #ffffff; /* Fondo blanco para mayor legibilidad */
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 900px;
@@ -66,20 +66,20 @@ section {
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #6a4c93; /* Color morado */
+    color: #6e4f95; /* Color morado suave */
     text-align: center;
 }
 
 p {
     font-size: 1em;
     line-height: 1.6;
-    color: #555;
+    color: #666; /* Gris oscuro */
     text-align: justify;
 }
 
 /* Botón desplegable */
 .collapsible {
-    background-color: #6a4c93;
+    background-color: #6e4f95; /* Morado suave */
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -91,25 +91,25 @@ p {
     font-weight: bold;
     transition: background 0.3s ease;
     border-radius: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 .collapsible:hover {
-    background-color: #9b5fc0; /* Color más claro para hover */
+    background-color: #9b7fba; /* Lila suave para hover */
 }
 
 /* Contenido desplegable */
 .content {
     padding: 0 15px;
-    margin-top: 1px;
+    margin-top: 10px;
     margin-bottom: 20px;
     overflow: hidden;
-    background-color: #f4f4f8;
+    background-color: #f9f9f9; /* Fondo gris muy suave */
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-height: 0; /* Comienza cerrado */
-    transition: max-height 0.3s ease-out; /* transición para mostrar/ocultar el contenido */
+    transition: max-height 0.3s ease-out;
 }
 
 .content p {
@@ -127,7 +127,7 @@ p {
 }
 
 .card {
-    background: white;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
@@ -148,7 +148,7 @@ p {
 .card h2 {
     margin: 15px 0;
     font-size: 1.5em;
-    color: #6a4c93;
+    color: #6e4f95; /* Morado suave */
     transition: background 0.3s ease;
 }
 
@@ -159,7 +159,7 @@ p {
 
 .card a {
     text-decoration: none;
-    color: #00bcd4;
+    color: #f1c40f; /* Amarillo suave */
     font-weight: 700;
     margin-top: 10px;
     display: inline-block;
@@ -167,7 +167,7 @@ p {
 }
 
 .card a:hover {
-    color: #007bff;
+    color: #f39c12; /* Amarillo más brillante */
 }
 
 /* Form Styles */
@@ -188,7 +188,7 @@ form input, form textarea {
 }
 
 form button {
-    background: #6a4c93;
+    background: #6e4f95;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -200,13 +200,13 @@ form button {
 }
 
 form button:hover {
-    background: #9b5fc0;
+    background: #9b7fba; /* Lila suave para hover */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    background: #6a4c93;
+    background: #6e4f95;
     color: white;
     padding: 15px 0;
     margin-top: 40px;
