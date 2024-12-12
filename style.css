@@ -12,7 +12,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(180deg, #d6a8e6, #6a4c93); /* Degradado de lila claro a morado oscuro */
+    background: linear-gradient(90deg, #d6a8e6, #6a4c93); /* Degradado de lila claro a morado oscuro */
     color: white;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -91,7 +91,7 @@ p {
     font-weight: bold;
     transition: background 0.3s ease;
     border-radius: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 .collapsible:hover {
@@ -102,7 +102,7 @@ p {
 .content {
     padding: 0 15px;
     margin-top: 1px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     overflow: hidden;
     background-color: #f4f4f8;
     border: 1px solid #ddd;
