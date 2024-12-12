@@ -91,7 +91,7 @@ p {
     font-weight: bold;
     transition: background 0.3s ease;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .collapsible:hover {
@@ -102,7 +102,7 @@ p {
 .content {
     padding: 0 15px;
     margin-top: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     overflow: hidden;
     background-color: #f4f4f8;
     border: 1px solid #ddd;
