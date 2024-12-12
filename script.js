@@ -8,12 +8,12 @@
             // Selecciona el contenido asociado con el botón
             const content = this.nextElementSibling;
 
-            // Si el contenido está visible, lo oculta
+            // Si el contenido tiene un max-height (significa que está abierto), lo ocultamos
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
             } else {
-                // Si el contenido está oculto, lo despliega
-                content.style.maxHeight = content.scrollHeight + "px";
+                // Si no tiene max-height (está cerrado), lo mostramos
+                content.style.maxHeight = content.scrollHeight + "px"; // Le damos altura suficiente para mostrar el contenido
             }
         });
     });
