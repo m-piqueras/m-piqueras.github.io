@@ -79,8 +79,8 @@ p {
 
 /* Botón desplegable */
 .collapsible {
-    background-color: #5c3d8b;
-    color: white;
+    background-color: #3c6e8f; /* Azul frío */
+    color: white; /* Texto blanco */
     cursor: pointer;
     padding: 15px;
     width: 100%;
@@ -95,7 +95,7 @@ p {
 }
 
 .collapsible:hover {
-    background-color: #3c6e8f; /* Azul frío para hover */
+    background-color: #4f9b9f; /* Verde azulado en hover */
 }
 
 /* Contenido desplegable */
