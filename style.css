@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(315deg, #5c3d8b, #3c6e8f); /* Degradado de morado frío a azul frío */
+    background: linear-gradient(315deg, #a3c7e6, #ff9f43); /* Degradado de azul claro a naranja */
     color: #333; /* Gris oscuro para el texto */
 }
 
@@ -12,8 +12,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #5c3d8b; /* Morado frío */
-    color: #ffffff; /* Blanco para contraste */
+    background: #56c6ff; /* Azul claro */
+    color: #ffffff; /* Blanco para el contraste */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -39,7 +39,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #4f9b9f; /* Verde azulado suave en el hover */
+    color: #ff9f43; /* Naranja en hover */
 }
 
 /* Main Content Styles */
@@ -66,7 +66,7 @@ section {
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #5c3d8b; /* Morado frío */
+    color: #ff9f43; /* Naranja */
     text-align: center;
 }
 
@@ -79,7 +79,7 @@ p {
 
 /* Botón desplegable */
 .collapsible {
-    background-color: #3c6e8f; /* Azul frío */
+    background-color: #56c6ff; /* Azul claro */
     color: white; /* Texto blanco */
     cursor: pointer;
     padding: 15px;
@@ -95,7 +95,7 @@ p {
 }
 
 .collapsible:hover {
-    background-color: #4f9b9f; /* Verde azulado en hover */
+    background-color: #ff9f43; /* Naranja en hover */
 }
 
 /* Contenido desplegable */
@@ -104,7 +104,7 @@ p {
     margin-top: 1px;
     margin-bottom: 20px;
     overflow: hidden;
-    background-color: #f4f4f8; /* Gris claro de fondo */
+    background-color: #f9f9f9; /* Gris claro para el fondo */
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -148,7 +148,7 @@ p {
 .card h2 {
     margin: 15px 0;
     font-size: 1.5em;
-    color: #5c3d8b; /* Morado frío */
+    color: #56c6ff; /* Azul claro */
 }
 
 .card p {
@@ -158,7 +158,7 @@ p {
 
 .card a {
     text-decoration: none;
-    color: #3c6e8f; /* Azul frío para enlaces */
+    color: #ff9f43; /* Naranja para enlaces */
     font-weight: 700;
     margin-top: 10px;
     display: inline-block;
@@ -166,7 +166,7 @@ p {
 }
 
 .card a:hover {
-    color: #4f9b9f; /* Verde azulado en hover */
+    color: #56c6ff; /* Azul claro en hover */
 }
 
 /* Form Styles */
@@ -187,7 +187,7 @@ form input, form textarea {
 }
 
 form button {
-    background: #5c3d8b;
+    background: #ff9f43; /* Naranja */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -199,13 +199,13 @@ form button {
 }
 
 form button:hover {
-    background: #3c6e8f; /* Azul frío para hover */
+    background: #56c6ff; /* Azul claro en hover */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    background: #5c3d8b;
+    background: #56c6ff; /* Azul claro */
     color: white;
     padding: 15px 0;
     margin-top: 40px;
