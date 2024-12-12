@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(315deg, #a3c7e6, #ff9f43); /* Degradado de azul claro a naranja */
+    background: linear-gradient(315deg,  #ff9f43, #a3c7e6); /* Degradado de azul claro a naranja */
     color: #333; /* Gris oscuro para el texto */
 }
 
