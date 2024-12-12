@@ -13,9 +13,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(90deg, #d3a4f4, #4b0082); /* Degradado de lila a morado oscuro */
-    transition: background 1s ease; /* Transición suave de 1 segundo */
-    color: white;
+    background: linear-gradient(90deg, #d3a4f4, #4b0082);
+    color: #00bcd4; /* Azul claro */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
