@@ -28,21 +28,21 @@
             </div>
         </section>
 
-       <section id="proyectos" class="container">
-    <h1>Proyectos</h1>
-    <div class="project">
-        <button class="collapsible">Clasificador de Señales</button>
-        <div class="content">
-            <p>Un sistema diseñado para identificar modulaciones en señales inalámbricas, utilizando técnicas avanzadas de machine learning.</p>
-        </div>
-    </div>
-    <div class="project">
-        <button class="collapsible">Tratamiento de Señales Genómicas</button>
-        <div class="content">
-            <p>Clasificación de regiones codificantes y no codificantes en ADN mediante el uso de algoritmos de DSP y aprendizaje automático.</p>
-        </div>
-    </div>
-</section>
+        <section id="proyectos" class="container">
+            <h1>Proyectos</h1>
+            <div class="project">
+                <button class="collapsible">Clasificador de Señales</button>
+                <div class="content">
+                    <p>Un sistema diseñado para identificar modulaciones en señales inalámbricas, utilizando técnicas avanzadas de machine learning.</p>
+                </div>
+            </div>
+            <div class="project">
+                <button class="collapsible">Tratamiento de Señales Genómicas</button>
+                <div class="content">
+                    <p>Clasificación de regiones codificantes y no codificantes en ADN mediante el uso de algoritmos de DSP y aprendizaje automático.</p>
+                </div>
+            </div>
+        </section>
 
         <section id="contact">
             <div class="container">
@@ -60,5 +60,26 @@
     <footer>
         <p>&copy; 2024 Mario Piqueras</p>
     </footer>
+
+    <script>
+        // Selecciona todos los botones colapsables
+        const collapsibles = document.querySelectorAll(".collapsible");
+
+        // Añade un evento de clic a cada botón
+        collapsibles.forEach(button => {
+            button.addEventListener("click", function() {
+                // Selecciona el contenido asociado con el botón
+                const content = this.nextElementSibling;
+
+                // Si el contenido tiene un max-height (significa que está abierto), lo ocultamos
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    // Si no tiene max-height (está cerrado), lo mostramos
+                    content.style.maxHeight = content.scrollHeight + "px"; // Le damos altura suficiente para mostrar el contenido
+                }
+            });
+        });
+    </script>
 </body>
 </html>
