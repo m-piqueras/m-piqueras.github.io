@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(225deg, #d3a4f4, #4b0082); /* Degradado de lila a morado oscuro */
+    background: linear-gradient(45deg, #d3a4f4, #4b0082); /* Degradado de lila a morado oscuro */
     transition: background 1s ease; /* Transición suave de 1 segundo */
     color: #333;
 }
