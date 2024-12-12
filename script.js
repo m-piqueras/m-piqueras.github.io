@@ -1,21 +1,20 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Función para el botón de contacto
-    const contactButton = document.querySelector('#contact button');
-    contactButton.addEventListener('click', () => {
-        alert('¡Gracias por tu interés! Me pondré en contacto contigo pronto.');
-    });
+<script>
+    // Selecciona todos los botones colapsables
+    const collapsibles = document.querySelectorAll(".collapsible");
 
-    // Funcionalidad de los desplegables
-    const collapsibles = document.querySelectorAll('.collapsible');
-    collapsibles.forEach((button) => {
-        button.addEventListener('click', () => {
-            button.classList.toggle('active');
-            const content = button.nextElementSibling;
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
+    // Añade un evento de clic a cada botón
+    collapsibles.forEach(button => {
+        button.addEventListener("click", function() {
+            // Selecciona el contenido asociado con el botón
+            const content = this.nextElementSibling;
+
+            // Si el contenido está visible, lo oculta
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
             } else {
-                content.style.display = 'block';
+                // Si el contenido está oculto, lo despliega
+                content.style.maxHeight = content.scrollHeight + "px";
             }
         });
     });
-});
+</script>
