@@ -109,6 +109,7 @@ p {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: max-height 0.3s ease;
+    max-height: 0; /* Comienza cerrado */
 }
 
 .content p {
@@ -116,7 +117,6 @@ p {
     font-size: 1em;
     color: #333;
 }
-
 
 /* Project Cards */
 .project-list {
