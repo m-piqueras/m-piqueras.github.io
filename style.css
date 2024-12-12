@@ -101,8 +101,8 @@ p {
 /* Contenido desplegable */
 .content {
     padding: 0 15px;
-    margin-top: 5px;
-    display: block; /* Asegúrate de que no esté oculto por defecto */
+    margin-top: 1px;
+    margin-bottom: 3px;
     overflow: hidden;
     background-color: #f4f4f8;
     border: 1px solid #ddd;
