@@ -77,6 +77,47 @@ p {
     text-align: justify;
 }
 
+/* Botón desplegable */
+.collapsible {
+    background-color: #6a67c7;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.collapsible:hover {
+    background-color: #4c4c93;
+}
+
+/* Contenido desplegable */
+.content {
+    padding: 0 15px;
+    margin-top: 5px;
+    display: none;
+    overflow: hidden;
+    background-color: #f4f4f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease;
+}
+
+.content p {
+    margin: 15px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+
 /* Project Cards */
 .project-list {
     display: flex;
