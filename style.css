@@ -102,14 +102,14 @@ p {
 .content {
     padding: 0 15px;
     margin-top: 5px;
-    display: none;
+    display: block; /* Asegúrate de que no esté oculto por defecto */
     overflow: hidden;
     background-color: #f4f4f8;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: max-height 0.3s ease;
     max-height: 0; /* Comienza cerrado */
+    transition: max-height 0.3s ease-out; /* transición para mostrar/ocultar el contenido */
 }
 
 .content p {
