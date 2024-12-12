@@ -3,8 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #d3a4f4, #4b0082); /* Degradado de lila a morado oscuro */
-    transition: background 1s ease; /* Transición suave de 1 segundo */
+    background: linear-gradient(225deg, #d3a4f4, #4b0082); /* Degradado de lila a morado oscuro */
     color: #333;
 }
 
@@ -13,8 +12,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(90deg, #d3a4f4, #4b0082);
-    color: #00bcd4; /* Azul claro */
+    background: #4b0082;
+    color: #8af2ff; /* Azul claro */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
