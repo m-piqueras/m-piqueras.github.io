@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(315deg,  #3ba0ad, #a1f4ff); /* Degradado de azul claro a naranja */
+    background: linear-gradient(315deg,  #3ba0ad, #a1f4ff); /* Degradado de azul claro a más oscuro */
     color: #333; /* Gris oscuro para el texto */
 }
 
@@ -101,7 +101,7 @@ p {
 /* Contenido desplegable */
 .content {
     padding: 0 15px;
-    margin-top: 1px;
+    margin-top: 0px;
     margin-bottom: 20px;
     overflow: hidden;
     background-color: #f9f9f9; /* Gris claro para el fondo */
