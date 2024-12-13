@@ -12,7 +12,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #56c6ff; /* Azul claro */
+    background: #ff9f43; /* Naranja */
     color: #ffffff; /* Blanco para el contraste */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -39,7 +39,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff9f43; /* Naranja en hover */
+    color: #c9f9ff; /* Naranja en hover */
 }
 
 /* Main Content Styles */
