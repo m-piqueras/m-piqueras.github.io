@@ -1,19 +1,19 @@
-/* Reset general */
+/* General Reset */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(315deg, #d3e9ff, #92b9ff); /* Degradado azul */
+    background: linear-gradient(315deg, #3ba0ad, #dbfbff);
     color: #333;
 }
 
-/* Header */
+/* Header Styles */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #0056b3; /* Azul oscuro */
-    color: white;
+    background: #ff9f43;
+    color: #ffffff;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -39,27 +39,47 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff9900; /* Naranja */
+    color: #c9f9ff;
 }
 
-/* Main Content */
+/* Main Content Styles */
 main {
     padding-top: 80px;
-    text-align: center;
 }
 
 section {
-    padding: 20px;
-    margin: 40px auto;
-    max-width: 900px;
-    background: white;
+    padding: 50px 20px;
+    margin: 40px 0;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
 }
 
-/* Desplegables */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff9f43;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Botón desplegable */
 .collapsible {
-    background-color: #007bff;
+    background-color: #56c6ff;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -71,34 +91,70 @@ section {
     font-weight: bold;
     transition: background 0.3s ease;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .collapsible:hover {
-    background-color: #0056b3;
+    background-color: #ff9f43;
 }
 
 .content {
-    padding: 15px;
-    max-height: 0;
+    padding: 0 15px;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    background: #f9f9ff; /* Fondo claro */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
 }
 
-iframe {
+.content iframe {
     width: 100%;
-    height: 400px; /* Ajustar según necesidad */
+    height: 0;
+    transition: height 0.3s ease-out;
     border: none;
 }
 
-/* Footer */
+.content.active iframe {
+    height: 400px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background: #ff9f43;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #56c6ff;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
-    background: #0056b3;
+    background: #56c6ff;
     color: white;
     padding: 15px 0;
     margin-top: 40px;
