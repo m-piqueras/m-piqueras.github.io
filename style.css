@@ -112,6 +112,25 @@ p {
     transition: max-height 0.3s ease-out;
 }
 
+a.load-pdf {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a.load-pdf:hover {
+    color: #0056b3;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 0;
+    border: none;
+    transition: height 0.3s ease-out;
+}
 .content p {
     margin: 15px 0;
     font-size: 1em;
