@@ -1,20 +1,29 @@
-<script>
-    // Selecciona todos los botones colapsables
-    const collapsibles = document.querySelectorAll(".collapsible");
+// Manejo de desplegables
+const collapsibles = document.querySelectorAll(".collapsible");
 
-    // Añade un evento de clic a cada botón
-    collapsibles.forEach(button => {
-        button.addEventListener("click", function() {
-            // Selecciona el contenido asociado con el botón
-            const content = this.nextElementSibling;
+collapsibles.forEach(button => {
+    button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        button.classList.toggle("active");
 
-            // Si el contenido tiene un max-height (significa que está abierto), lo ocultamos
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                // Si no tiene max-height (está cerrado), lo mostramos
-                content.style.maxHeight = content.scrollHeight + "px"; // Le damos altura suficiente para mostrar el contenido
-            }
-        });
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null; // Cerrar
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px"; // Abrir
+        }
     });
-</script>
+});
+
+// Manejo de carga de PDFs
+const pdfLinks = document.querySelectorAll(".load-pdf");
+
+pdfLinks.forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault(); // Evitar comportamiento por defecto
+        const pdfSrc = link.getAttribute("data-pdf"); // Ruta del PDF
+        const viewer = link.nextElementSibling; // Obtener el iframe asociado
+
+        viewer.src = pdfSrc; // Asignar el PDF al iframe
+        viewer.style.height = "400px"; // Ajustar la altura del iframe
+    });
+});
