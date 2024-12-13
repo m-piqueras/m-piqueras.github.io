@@ -1,4 +1,4 @@
-// Manejo de desplegables
+// Manejo de botones colapsables
 const collapsibles = document.querySelectorAll(".collapsible");
 
 collapsibles.forEach(button => {
@@ -7,9 +7,9 @@ collapsibles.forEach(button => {
         button.classList.toggle("active");
 
         if (content.style.maxHeight) {
-            content.style.maxHeight = null; // Cerrar
+            content.style.maxHeight = null;
         } else {
-            content.style.maxHeight = content.scrollHeight + "px"; // Abrir
+            content.style.maxHeight = content.scrollHeight + "px";
         }
     });
 });
@@ -19,11 +19,11 @@ const pdfLinks = document.querySelectorAll(".load-pdf");
 
 pdfLinks.forEach(link => {
     link.addEventListener("click", (event) => {
-        event.preventDefault(); // Evitar comportamiento por defecto
-        const pdfSrc = link.getAttribute("data-pdf"); // Ruta del PDF
-        const viewer = link.nextElementSibling; // Obtener el iframe asociado
+        event.preventDefault();
+        const pdfSrc = link.getAttribute("data-pdf");
+        const viewer = link.nextElementSibling;
 
-        viewer.src = pdfSrc; // Asignar el PDF al iframe
-        viewer.style.height = "400px"; // Ajustar la altura del iframe
+        viewer.src = pdfSrc;
+        viewer.style.height = "400px";
     });
 });
