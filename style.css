@@ -118,39 +118,6 @@ p {
     border: none;
 }
 
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-form button {
-    background: #9d50bb; /* Morado */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-form button:hover {
-    background: #ffe082; /* Amarillo pastel */
-    color: #6e48aa; /* Morado */
-}
-
 /* Footer Styles */
 footer {
     text-align: center;
