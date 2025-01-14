@@ -3,7 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(0deg, #9d50bb, #6e48aa); /* Morado degradado */
+    /*background: linear-gradient(0deg, #9d50bb, #6e48aa); /* Morado degradado */
+    background: linear-gradient(0def, blue, red)
     color: #333;
 }
 
@@ -12,7 +13,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(90deg, #6e48aa, #b39ddb); /* Morado degradado más suave */
+    /*background: linear-gradient(90deg, #6e48aa, #b39ddb); /* Morado degradado más suave */
+    background: linear-gradient(90def, blue, red)
     color: white;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
