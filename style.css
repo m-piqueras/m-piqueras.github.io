@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /*background: linear-gradient(0deg, #9d50bb, #6e48aa); /* Morado degradado */
-    background: linear-gradient(0def, blue, red)
+    background: linear-gradient(0def, #3c09d6, #d92329)
     color: #333;
 }
 
@@ -14,7 +14,7 @@ header {
     top: 0;
     width: 100%;
     /*background: linear-gradient(90deg, #6e48aa, #b39ddb); /* Morado degradado más suave */
-    background: linear-gradient(90def, blue, red)
+    background: linear-gradient(90def, #3c09d6, #d92329)
     color: white;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
