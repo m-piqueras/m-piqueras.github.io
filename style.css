@@ -1,20 +1,11 @@
-/* --- Variables: Paleta "Professional Blue" --- */
+/* --- Variables: Professional Blue Palette --- */
 :root {
-    /* Azul Oscuro (Ingeniería/Corporativo) para encabezados y pie de página */
-    --primary-color: #0d47a1; 
-    
-    /* Azul Vibrante para acentos y estados activos */
-    --accent-color: #1976d2;  
-    
-    /* Dorado para detalles sutiles (complementario del azul) */
-    --highlight-color: #ffd740;
-    
-    /* Textos y Fondos */
+    --primary-color: #0d47a1; /* Azul Ingeniería */
+    --accent-color: #1976d2;  /* Azul Vibrante */
+    --highlight-color: #ffd740; /* Dorado para detalles */
     --text-color: #333333;
-    --bg-color: #f4f6f8;      /* Gris azulado muy tenue, más técnico que el blanco puro */
+    --bg-color: #f4f6f8;      /* Gris azulado suave */
     --white: #ffffff;
-    
-    /* Sombras */
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,19 +19,17 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styles - Efecto "Glassmorphism" Azulado */
+/* Header Styles - Glassmorphism */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    /* Azul profundo con transparencia */
     background: rgba(13, 71, 161, 0.95); 
     backdrop-filter: blur(10px);
     color: var(--white);
     padding: 15px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     z-index: 1000;
-    transition: all 0.3s ease;
 }
 
 header nav ul {
@@ -64,7 +53,6 @@ header nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Efecto de subrayado animado en dorado */
 header nav ul li a::after {
     content: '';
     position: absolute;
@@ -78,6 +66,25 @@ header nav ul li a::after {
 
 header nav ul li a:hover::after {
     width: 100%;
+}
+
+/* Scroll Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--highlight-color);
+    width: 0%;
+    border-radius: 0 2px 2px 0;
+    transition: width 0.1s ease-out;
+    box-shadow: 0 0 10px rgba(255, 215, 64, 0.5);
 }
 
 /* Main Content Styles */
@@ -94,10 +101,15 @@ section {
     background: var(--white);
     border-radius: 8px;
     box-shadow: var(--shadow);
-    border-top: 4px solid var(--accent-color); /* Detalle técnico superior */
+    border-top: 4px solid var(--accent-color);
 }
 
-/* Typography */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.2em;
@@ -110,18 +122,17 @@ h1 {
 
 p {
     font-size: 1.05em;
-    color: #444; /* Gris oscuro para lectura cómoda */
-    text-align: left; 
+    color: #444;
+    text-align: left;
     margin-bottom: 20px;
 }
 
-/* Resaltado de skills en azul vibrante */
 #about b {
     color: var(--accent-color);
     font-weight: 700;
 }
 
-/* --- Project Cards --- */
+/* Project Cards */
 .project {
     margin-bottom: 20px;
     border-radius: 6px;
@@ -134,20 +145,21 @@ p {
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    color: #666; /* Gris técnico */
+    color: #666;
     margin: 10px 0 5px 5px;
     font-weight: 700;
+    text-align: left;
+    padding-left: 5px;
 }
 
-/* Botón desplegable */
 .collapsible {
-    background-color: #f8f9fa; /* Fondo gris muy claro */
+    background-color: #f8f9fa;
     color: var(--primary-color);
     cursor: pointer;
     padding: 20px;
     width: 100%;
     border: none;
-    border-left: 5px solid var(--primary-color); /* Indicador azul oscuro */
+    border-left: 5px solid var(--primary-color);
     text-align: left;
     outline: none;
     font-size: 1.25em;
@@ -159,11 +171,10 @@ p {
 }
 
 .collapsible:hover {
-    background-color: #e3f2fd; /* Azul muy pálido al pasar el ratón */
+    background-color: #e3f2fd;
     padding-left: 25px;
 }
 
-/* Icono +/- */
 .collapsible::after {
     content: '+'; 
     font-size: 1.5em;
@@ -171,22 +182,18 @@ p {
     transition: transform 0.3s ease;
 }
 
-.collapsible.active::after {
-    content: '-';
-    transform: rotate(180deg);
-}
-
 .collapsible.active {
     background-color: var(--primary-color);
     color: var(--white);
-    border-left-color: var(--highlight-color); /* Detalle dorado al estar activo */
+    border-left-color: var(--highlight-color);
 }
 
 .collapsible.active::after {
-    color: var(--highlight-color); /* El signo menos se vuelve dorado */
+    content: '-';
+    transform: rotate(180deg);
+    color: var(--highlight-color);
 }
 
-/* Contenido desplegable */
 .content {
     background-color: var(--white);
     padding: 0 20px;
@@ -201,10 +208,10 @@ p {
     border-bottom: 1px solid #eee;
 }
 
-/* Bullet points personalizados */
 .content ul {
     list-style: none;
     padding-left: 10px;
+    text-align: left;
 }
 
 .content ul li {
@@ -214,7 +221,6 @@ p {
     color: #333;
 }
 
-/* Flecha azul técnica como viñeta */
 .content ul li::before {
     content: '➔';
     position: absolute;
@@ -223,7 +229,7 @@ p {
     font-size: 0.9em;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     text-align: center;
     background: var(--primary-color);
@@ -232,22 +238,3 @@ footer {
     font-size: 0.9em;
     letter-spacing: 0.5px;
 }
-/* --- Scroll Progress Bar --- */
-.progress-container {
-    width: 100%;
-    height: 4px; /* Grosor de la barra */
-    background: transparent; /* Fondo transparente */
-    position: absolute;
-    bottom: 0; /* Se pega al borde inferior del header */
-    left: 0;
-}
-
-.progress-bar {
-    height: 100%;
-    background: var(--highlight-color); /* Color Dorado */
-    width: 0%; /* Empieza en 0 */
-    border-radius: 0 2px 2px 0; /* Un pequeño borde redondeado a la derecha */
-    transition: width 0.1s ease-out; /* Suaviza el movimiento */
-    box-shadow: 0 0 10px rgba(255, 215, 64, 0.7); /* Un ligero brillo (glow) */
-}
-
