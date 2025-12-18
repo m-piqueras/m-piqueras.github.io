@@ -232,3 +232,22 @@ footer {
     font-size: 0.9em;
     letter-spacing: 0.5px;
 }
+/* --- Scroll Progress Bar --- */
+.progress-container {
+    width: 100%;
+    height: 4px; /* Grosor de la barra */
+    background: transparent; /* Fondo transparente */
+    position: absolute;
+    bottom: 0; /* Se pega al borde inferior del header */
+    left: 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--highlight-color); /* Color Dorado */
+    width: 0%; /* Empieza en 0 */
+    border-radius: 0 2px 2px 0; /* Un pequeño borde redondeado a la derecha */
+    transition: width 0.1s ease-out; /* Suaviza el movimiento */
+    box-shadow: 0 0 10px rgba(255, 215, 64, 0.7); /* Un ligero brillo (glow) */
+}
+
