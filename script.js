@@ -1,3 +1,20 @@
+// --- Scroll Progress Bar Logic ---
+window.onscroll = function() { updateProgressBar() };
+
+function updateProgressBar() {
+    // 1. Cuánto scroll ha hecho el usuario desde arriba
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    
+    // 2. La altura total "scrolleable" (Altura total del documento - Altura de la ventana visible)
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    // 3. Regla de tres para sacar el porcentaje
+    const scrolled = (winScroll / height) * 100;
+    
+    // 4. Aplicar el ancho al elemento
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 // Manejo de botones colapsables
 const collapsibles = document.querySelectorAll(".collapsible");
 
@@ -20,3 +37,4 @@ collapsibles.forEach(button => {
         }
     });
 });
+
