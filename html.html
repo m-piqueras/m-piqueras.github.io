@@ -34,30 +34,93 @@
         </section>
 
         <section id="projects" class="container">
-            <h1>Proyectos Personales</h1>
+            <h1>Key Projects</h1>
+            <p>Academic and personal projects demonstrating technical proficiency.</p>
+
             <div class="project">
-                <p>Realizados de forma externa a la universidad y totalmente autónoma</p>
-                <button class="collapsible">Clasificador de Señales</button>
+                <p>Bachelor's Thesis (TFG)</p>
+                <button class="collapsible">Neural Network for Audio Turn Prediction</button>
                 <div class="content">
-                    <p>El proyecto "Clasificador de Señales" se centra en la identificación de tipos de modulación de señales en sistemas 
-                        de comunicación, enfrentando desafíos como el ruido y los efectos de fading. Utilizando técnicas de aprendizaje automático,
-                        el clasificador detecta y clasifica las señales basándose en sus características, mejorando la eficiencia y fiabilidad
-                        en entornos de comunicaciones inalámbricas.
-                    </p>
-                    <iframe src="Clasificador de Señales con Ruido y Efecto 'fading'.pdf" title = "Memoria"></iframe>
+                    <ul>
+                        <li>Designed a neural network architecture to predict turn-taking changes in audio recordings based on acoustic feature analysis.</li>
+                        <li>Engineered a rigorous data preprocessing pipeline to tabularize and format acoustic inputs for optimal model training.</li>
+                        <li>Developed a custom post-processing module to refine predictions and visualize results with high precision.</li>
+                    </ul>
                 </div>
             </div>
+
             <div class="project">
-                <button class="collapsible">Tratamiento de Señales Genómicas</button>
+                <p>FPGA Audio System (HW/SW Co-Design)</p>
+                <button class="collapsible">Real-time Audio Recording & Playback System</button>
                 <div class="content">
-                    <p>El proyecto "Tratamiento de Señales Genómicas" se enfoca en desarrollar un sistema para clasificar regiones codificantes
-                        y no codificantes en secuencias de ADN, utilizando técnicas de procesamiento digital de señales y aprendizaje automático.
-                        A través del análisis de la entropía de nucleótidos y dinucleótidos, se extraen características que permiten diferenciar
-                        estas regiones, contribuyendo al estudio genómico y biológico.
-                    </p>
-                    <iframe src="Codec Señales Genómicas.pdf" title = "Memoria"></iframe>
+                    <ul>
+                        <li>Developed a real-time audio recording and playback system using Vivado and Simulink for hardware synthesis.</li>
+                        <li>Implemented embedded control software in C using Vitis to manage audio codecs and data flow.</li>
+                        <li>Integrated on-board peripherals to enable physical volume control and recording/playback mode switching directly from the FPGA board.</li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="project">
+                <p>Network Planning & Traffic Analysis</p>
+                <button class="collapsible">Network Infrastructure & Telemetry Analysis</button>
+                <div class="content">
+                    <ul>
+                        <li>Deployed network collectors and exporters to gather real-time telemetry and visualize traffic flow data.</li>
+                        <li>Conducted deep packet inspection and flow analysis to identify bottlenecks, protocols, and usage patterns.</li>
+                        <li>Dimensioned the network infrastructure and generated a cost-optimized, real-world budget proposal based on capacity requirements.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>Machine Learning & Signal Processing</p>
+                <button class="collapsible">Audio Pattern Recognition (ANN & DTW)</button>
+                <div class="content">
+                    <ul>
+                        <li>Implemented K-Nearest Neighbors (KNN) algorithms combined with Dynamic Time Warping (DTW) to classify temporal audio sequences.</li>
+                        <li>Designed and trained Artificial Neural Networks (ANN) for music genre classification and speech/music discrimination.</li>
+                        <li>Performed feature extraction using Mel-frequency cepstral coefficients (MFCCs) and Chroma features to optimize classifier accuracy.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>Digital Video Broadcasting</p>
+                <button class="collapsible">MPEG-2 Transport Stream Analysis</button>
+                <div class="content">
+                    <ul>
+                        <li>Analyzed MPEG-2 Transport Streams (TS) structure, verifying compliance with DVB broadcasting standards.</li>
+                        <li>Decoded and interpreted PSI/SI tables (PAT, PMT, SDT) to identify multiplexing structures and service configurations.</li>
+                        <li>Evaluated Quality of Service (QoS) metrics including PCR jitter and packet loss to diagnose transmission integrity issues.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>Computer Vision & Image Processing</p>
+                <button class="collapsible">Content-Based Image Retrieval System</button>
+                <div class="content">
+                    <ul>
+                        <li>Developed an image search engine capable of retrieving similar images from a dataset based on visual content rather than metadata.</li>
+                        <li>Implemented global and local descriptors (Color Histograms, Texture features) to generate unique image signatures.</li>
+                        <li>Optimized search efficiency using Euclidean distance metrics and validated system performance through Precision and Recall analysis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>RF & Microwave Engineering</p>
+                <button class="collapsible">Microstrip Patch Antenna Design</button>
+                <div class="content">
+                    <ul>
+                        <li>Designed and simulated a microstrip patch antenna array using CST Studio Suite tailored for specific frequency bands.</li>
+                        <li>Optimized key RF parameters including Return Loss ($S_{11}$), Voltage Standing Wave Ratio (VSWR), and Radiation Patterns.</li>
+                        <li>Analyzed electromagnetic field distributions and current density to maximize gain and directivity for wireless communications.</li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
 
         <section id="contact">
@@ -77,4 +140,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
