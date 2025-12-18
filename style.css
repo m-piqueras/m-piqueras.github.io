@@ -1,12 +1,21 @@
-/* --- Variables para facilitar cambios de color --- */
+/* --- Variables: Paleta "Professional Blue" --- */
 :root {
-    --primary-color: #6a1b9a; /* Morado profundo profesional */
-    --accent-color: #9c27b0;  /* Morado vibrante */
+    /* Azul Oscuro (Ingeniería/Corporativo) para encabezados y pie de página */
+    --primary-color: #0d47a1; 
+    
+    /* Azul Vibrante para acentos y estados activos */
+    --accent-color: #1976d2;  
+    
+    /* Dorado para detalles sutiles (complementario del azul) */
+    --highlight-color: #ffd740;
+    
+    /* Textos y Fondos */
     --text-color: #333333;
-    --bg-color: #f8f9fa;      /* Gris muy claro, limpio */
+    --bg-color: #f4f6f8;      /* Gris azulado muy tenue, más técnico que el blanco puro */
     --white: #ffffff;
+    
+    /* Sombras */
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --hover-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* General Reset */
@@ -14,17 +23,18 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color); /* Fondo limpio en lugar del degradado total */
+    background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-/* Header Styles - Efecto "Glassmorphism" */
+/* Header Styles - Efecto "Glassmorphism" Azulado */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(106, 27, 154, 0.95); /* Morado con ligera transparencia */
+    /* Azul profundo con transparencia */
+    background: rgba(13, 71, 161, 0.95); 
     backdrop-filter: blur(10px);
     color: var(--white);
     padding: 15px 0;
@@ -54,7 +64,7 @@ header nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Efecto de subrayado animado en el menú */
+/* Efecto de subrayado animado en dorado */
 header nav ul li a::after {
     content: '';
     position: absolute;
@@ -62,7 +72,7 @@ header nav ul li a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #ffd740; /* Amarillo dorado sutil */
+    background-color: var(--highlight-color);
     transition: width 0.3s ease;
 }
 
@@ -72,7 +82,7 @@ header nav ul li a:hover::after {
 
 /* Main Content Styles */
 main {
-    padding-top: 100px; /* Espacio para el header fijo */
+    padding-top: 100px;
     max-width: 900px;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -82,8 +92,9 @@ section {
     padding: 40px;
     margin-bottom: 40px;
     background: var(--white);
-    border-radius: 12px; /* Bordes más suaves */
+    border-radius: 8px;
     box-shadow: var(--shadow);
+    border-top: 4px solid var(--accent-color); /* Detalle técnico superior */
 }
 
 /* Typography */
@@ -93,66 +104,66 @@ h1 {
     margin-bottom: 30px;
     color: var(--primary-color);
     text-align: center;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
 }
 
 p {
     font-size: 1.05em;
-    color: #555;
-    text-align: left; /* IZQUIERDA es más legible que justificado */
+    color: #444; /* Gris oscuro para lectura cómoda */
+    text-align: left; 
     margin-bottom: 20px;
 }
 
-/* Estilos específicos para la sección "Sobre mí" para resaltar skills */
+/* Resaltado de skills en azul vibrante */
 #about b {
     color: var(--accent-color);
-}
-
-/* --- Project Cards (Rediseño total) --- */
-.project {
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-}
-
-.project > p {
-    /* Etiqueta pequeña encima del título (ej: Bachelor's Thesis) */
-    font-size: 0.85em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #888;
-    margin: 0 0 5px 5px;
     font-weight: 700;
 }
 
-/* Botón desplegable estilizado como tarjeta */
+/* --- Project Cards --- */
+.project {
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    background: var(--white);
+}
+
+.project > p {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #666; /* Gris técnico */
+    margin: 10px 0 5px 5px;
+    font-weight: 700;
+}
+
+/* Botón desplegable */
 .collapsible {
-    background-color: var(--white);
+    background-color: #f8f9fa; /* Fondo gris muy claro */
     color: var(--primary-color);
     cursor: pointer;
     padding: 20px;
     width: 100%;
     border: none;
-    border-left: 5px solid var(--primary-color); /* Borde lateral elegante */
+    border-left: 5px solid var(--primary-color); /* Indicador azul oscuro */
     text-align: left;
     outline: none;
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-weight: bold;
     display: flex;
-    justify-content: space-between; /* Para separar texto e icono */
+    justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .collapsible:hover {
-    background-color: #f3e5f5; /* Morado muy pálido al pasar el mouse */
-    padding-left: 25px; /* Pequeña animación de desplazamiento */
+    background-color: #e3f2fd; /* Azul muy pálido al pasar el ratón */
+    padding-left: 25px;
 }
 
-/* Icono de flecha/suma usando CSS puro */
+/* Icono +/- */
 .collapsible::after {
     content: '+'; 
     font-size: 1.5em;
@@ -168,6 +179,11 @@ p {
 .collapsible.active {
     background-color: var(--primary-color);
     color: var(--white);
+    border-left-color: var(--highlight-color); /* Detalle dorado al estar activo */
+}
+
+.collapsible.active::after {
+    color: var(--highlight-color); /* El signo menos se vuelve dorado */
 }
 
 /* Contenido desplegable */
@@ -177,28 +193,28 @@ p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease;
-    border-left: 5px solid #e0e0e0; /* Continuidad visual */
+    border-left: 5px solid #eceff1;
 }
 
 .content.active {
-    padding: 20px; /* Añade padding solo cuando está abierto */
+    padding: 20px;
     border-bottom: 1px solid #eee;
 }
 
-/* Estilo de los Bullet Points dentro de los proyectos */
+/* Bullet points personalizados */
 .content ul {
-    list-style: none; /* Quitamos los puntos por defecto */
+    list-style: none;
     padding-left: 10px;
 }
 
 .content ul li {
     position: relative;
     padding-left: 25px;
-    margin-bottom: 10px;
-    color: #444;
+    margin-bottom: 12px;
+    color: #333;
 }
 
-/* Custom bullet point (pequeña flecha) */
+/* Flecha azul técnica como viñeta */
 .content ul li::before {
     content: '➔';
     position: absolute;
@@ -212,6 +228,7 @@ footer {
     text-align: center;
     background: var(--primary-color);
     color: var(--white);
-    padding: 20px 0;
+    padding: 25px 0;
     font-size: 0.9em;
+    letter-spacing: 0.5px;
 }
