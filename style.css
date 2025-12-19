@@ -397,3 +397,23 @@ footer {
     font-size: 0.95em;
 }
 
+/* --- Scroll Animation (Fade In) --- */
+.hidden {
+    opacity: 0;
+    filter: blur(2px); /* Un desenfoque sutil muy elegante */
+    transform: translateY(30px); /* Empieza 30px más abajo */
+    transition: all 0.8s ease-out; /* Tarda 0.8s en aparecer */
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* Preferencia de accesibilidad: Si el usuario marea, quitamos la animación */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
