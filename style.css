@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /* La magia: deslizamiento suave */
+}
+
 /* --- Variables: Professional Blue Palette --- */
 :root {
     --primary-color: #0d47a1; /* Azul Ingeniería */
@@ -417,3 +421,4 @@ footer {
         transition: none;
     }
 }
+
