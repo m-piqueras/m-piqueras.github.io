@@ -327,26 +327,34 @@ footer {
     bottom: 0;
     left: 20px;
     border-radius: 2px;
+    z-index: 0; /* La línea se va al fondo */
+}
+
+/* Punto dorado */
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--highlight-color);
+    border: 4px solid var(--white); /* El borde blanco "corta" la línea visualmente */
+    border-radius: 50%;
+    
+    /* CÁLCULO DE CENTRADO PERFECTO:
+       Línea: Left 20px + Mitad de 4px = Centro en 22px
+       Punto: Ancho 20px + Borde 4px*2 = 28px total -> Mitad es 14px
+       Posición Left: 22px - 14px = 8px
+    */
+    left: 8px; 
+    
+    top: 5px;
+    z-index: 2; /* El punto se pone ENCIMA de la línea */
+    box-shadow: 0 0 0 4px rgba(255, 215, 64, 0.2);
 }
 
 .timeline-item {
     position: relative;
     padding-left: 60px;
     margin-bottom: 40px;
-}
-
-/* Punto (Dot) */
-.timeline-dot {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: var(--highlight-color); /* Dorado */
-    border: 4px solid var(--white);
-    border-radius: 50%;
-    left: 10px;
-    top: 5px;
-    z-index: 1;
-    box-shadow: 0 0 0 4px rgba(255, 215, 64, 0.2);
 }
 
 .timeline-item:hover .timeline-dot {
@@ -421,5 +429,6 @@ footer {
         transition: none;
     }
 }
+
 
 
