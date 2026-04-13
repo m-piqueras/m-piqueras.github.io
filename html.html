@@ -41,16 +41,24 @@
          <section id="projects" class="container">
             <h1>Key Projects</h1>
             
+            <div class="project-branch" style="margin-top: 2rem; margin-bottom: 1rem;">
+                <h2 style="color: #008080; border-bottom: 2px solid #008080; padding-bottom: 5px;"><i class="fas fa-satellite"></i> Space & Radiofrequency</h2>
+            </div>
+            
             <div class="project">
-                <p>Bachelor's Thesis (TFG)</p>
-                <button class="collapsible">Neural Network for Audio Turn Prediction</button>
+                <p>Satellite Communications (SatCom)</p>
+                <button class="collapsible">Satellite Link Budget & Coverage Analysis</button>
                 <div class="content">
                     <ul>
-                        <li>Designed a <strong>neural network architecture</strong> to predict turn-taking changes in audio recordings based on <strong>acoustic feature analysis</strong>.</li>
-                        <li>Engineered a rigorous <strong>data preprocessing pipeline</strong> to tabularize and format acoustic inputs for optimal <strong>model training</strong>.</li>
-                        <li>Developed a custom <strong>post-processing module</strong> to refine predictions and visualize results with high precision.</li>
+                        <li>Executed comprehensive uplink and downlink budgets (EIRP, Eb/N0, SNR) for geostationary satellite systems under varying atmospheric conditions.</li>
+                        <li>Modeled terrestrial receiver antenna sizing requirements based on geographic coverage zones, free-space path loss, and rain attenuation margins.</li>
+                        <li>Analyzed operational bitrates and link capacities for emerging LEO networks, specifically evaluating <strong>Starlink's LTE direct-to-cell</strong> architecture.</li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="project-branch" style="margin-top: 2.5rem; margin-bottom: 1rem;">
+                <h2 style="color: #008080; border-bottom: 2px solid #008080; padding-bottom: 5px;"><i class="fas fa-microchip"></i> Hardware & Embedded Systems</h2>
             </div>
 
             <div class="project">
@@ -61,6 +69,22 @@
                         <li>Developed a <strong>real-time audio recording and playback system</strong> using <strong>Vivado</strong> and <strong>Simulink</strong> for hardware synthesis.</li>
                         <li>Implemented embedded control software in <strong>C using Vitis</strong> to manage audio codecs and data flow.</li>
                         <li>Integrated on-board peripherals to enable <strong>physical volume control</strong> and recording/playback mode switching directly from the <strong>FPGA board</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-branch" style="margin-top: 2.5rem; margin-bottom: 1rem;">
+                <h2 style="color: #008080; border-bottom: 2px solid #008080; padding-bottom: 5px;"><i class="fas fa-shield-alt"></i> Networks & Cybersecurity</h2>
+            </div>
+
+            <div class="project">
+                <p>Cybersecurity & Machine Learning</p>
+                <button class="collapsible">AI-Driven Flow-Based Intrusion Detection System</button>
+                <div class="content">
+                    <ul>
+                        <li>Developed a low-latency cybersecurity IDS utilizing <strong>Machine Learning</strong> (Random Forest) and <strong>Deep Learning</strong> (MLP) to classify network flows.</li>
+                        <li>Engineered an optimized data pipeline (44 key features) mitigating data leakage and resolving severe class imbalance using dynamic hybrid <strong>SMOTE</strong>.</li>
+                        <li>Achieved high F1-Scores classifying over 300,000 flows into 5 critical attack macro-models (DoS, Backdoors, Advanced Threats, etc.).</li>
                     </ul>
                 </div>
             </div>
@@ -77,53 +101,22 @@
                 </div>
             </div>
 
-           <div class="project">
-                <p>Biometric Signal Processing</p>
-                <button class="collapsible">Online Handwriting Recognition (ANN & DTW)</button>
+            <div class="project-branch" style="margin-top: 2.5rem; margin-bottom: 1rem;">
+                <h2 style="color: #008080; border-bottom: 2px solid #008080; padding-bottom: 5px;"><i class="fas fa-brain"></i> AI & Signal Processing</h2>
+            </div>
+
+            <div class="project">
+                <p>Bachelor's Thesis (TFG)</p>
+                <button class="collapsible">Neural Network for Audio Turn Prediction</button>
                 <div class="content">
                     <ul>
-                        <li>Developed a biometric recognition system for online handwritten trajectories using <strong>Dynamic Time Warping (DTW)</strong> and <strong>Artificial Neural Networks (ANN)</strong>.</li>
-                        <li>Engineered a feature extraction pipeline selecting key kinematic descriptors (<strong>dX, dY, velocity, angle</strong>) and transforming temporal data into <strong>spatial heatmaps</strong>.</li>
-                        <li>Designed and trained a <strong>Multi-Layer Perceptron (MLP)</strong> with ReLU activation and Dropout regularization, achieving <strong>98.7% accuracy</strong> through rigorous cross-validation.</li>
+                        <li>Designed a <strong>neural network architecture</strong> to predict turn-taking changes in audio recordings based on <strong>acoustic feature analysis</strong>.</li>
+                        <li>Engineered a rigorous <strong>data preprocessing pipeline</strong> to tabularize and format acoustic inputs for optimal <strong>model training</strong>.</li>
+                        <li>Developed a custom <strong>post-processing module</strong> to refine predictions and visualize results with high precision.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="project">
-                <p>Embedded Systems & Microcontrollers</p>
-                <button class="collapsible">Embedded Game Console ("Simon Says")</button>
-                <div class="content">
-                    <ul>
-                        <li>Developed a fully functional interactive memory game on a microcontroller-based embedded platform using <strong>C</strong>.</li>
-                        <li>Designed a robust <strong>Finite State Machine (FSM)</strong> to manage complex game logic, including multiple game modes (Classic, Potentiometer, Dual), adaptive difficulty levels, and user input validation.</li>
-                        <li>Integrated and controlled hardware peripherals including <strong>Joysticks, Potentiometers, Accelerometers (for motion detection), RGB LEDs, and LCD displays</strong> via low-level I/O interfaces.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project">
-                <p>Computer Vision & Image Processing</p>
-                <button class="collapsible">Content-Based Image Retrieval (CBIR) System</button>
-                <div class="content">
-                    <ul>
-                        <li>Developed an image search engine in <strong>MATLAB</strong> capable of retrieving similar images based on visual content (color and texture) rather than metadata.</li>
-                        <li>Implemented and compared <strong>Color Layout Descriptors (CLD)</strong> using Discrete Cosine Transform (DCT) on YCrCb space vs. Raw Pixel matching.</li>
-                        <li>Engineered a custom <strong>Texture Histogram Descriptor</strong> to improve classification accuracy, optimizing the system for a dataset of 280+ images.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project">
-                <p>RF & Microwave Engineering</p>
-                <button class="collapsible">Antenna & Transmission Line Design</button>
-                <div class="content">
-                    <ul>
-                        <li>Designed and simulated Microstrip Patch and Dipole antennas using <strong>CST Studio Suite</strong>, optimizing geometry for the 4.7 GHz frequency band.</li>
-                        <li>Engineered the <strong>transmission line and impedance matching network</strong> using <strong>ADS (Advanced Design System)</strong> to ensure maximum power transfer.</li>
-                        <li>Analyzed electromagnetic performance including Return Loss (S11), VSWR, and 3D Farfield radiation patterns to verify directivity and gain.</li>
-                    </ul>
-                </div>
-            </div>
           </section>
 
         <section id="skills" class="container">
@@ -241,26 +234,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Mario Piqueras</p>
+        <p>&copy; 2026 Mario Piqueras</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
