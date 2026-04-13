@@ -50,9 +50,21 @@
                 <button class="collapsible">Satellite Link Budget & Coverage Analysis</button>
                 <div class="content">
                     <ul>
-                        <li>Executed comprehensive uplink and downlink budgets (EIRP, Eb/N0, SNR) for geostationary satellite systems under varying atmospheric conditions.</li>
-                        <li>Modeled terrestrial receiver antenna sizing requirements based on geographic coverage zones, free-space path loss, and rain attenuation margins.</li>
-                        <li>Analyzed operational bitrates and link capacities for emerging LEO networks, specifically evaluating <strong>Starlink's LTE direct-to-cell</strong> architecture.</li>
+                        <li>Executed comprehensive uplink and downlink budgets (EIRP, Eb/N0, SNR) for geostationary satellite systems under varying atmospheric conditions[cite: 5, 18, 23, 27].</li>
+                        <li>Modeled terrestrial receiver antenna sizing requirements based on geographic coverage zones, free-space path loss, and rain attenuation margins[cite: 103, 104, 118].</li>
+                        <li>Analyzed operational bitrates and link capacities for emerging LEO networks, specifically evaluating <strong>Starlink's LTE direct-to-cell</strong> architecture[cite: 128].</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>RF & Microwave Engineering</p>
+                <button class="collapsible">Antenna & Transmission Line Design</button>
+                <div class="content">
+                    <ul>
+                        <li>Designed and simulated Microstrip Patch and Dipole antennas using <strong>CST Studio Suite</strong>, optimizing geometry for the 4.7 GHz frequency band.</li>
+                        <li>Engineered the <strong>transmission line and impedance matching network</strong> using <strong>ADS (Advanced Design System)</strong> to ensure maximum power transfer.</li>
+                        <li>Analyzed electromagnetic performance including Return Loss (S11), VSWR, and 3D Farfield radiation patterns to verify directivity and gain.</li>
                     </ul>
                 </div>
             </div>
@@ -69,6 +81,18 @@
                         <li>Developed a <strong>real-time audio recording and playback system</strong> using <strong>Vivado</strong> and <strong>Simulink</strong> for hardware synthesis.</li>
                         <li>Implemented embedded control software in <strong>C using Vitis</strong> to manage audio codecs and data flow.</li>
                         <li>Integrated on-board peripherals to enable <strong>physical volume control</strong> and recording/playback mode switching directly from the <strong>FPGA board</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>Embedded Systems & Microcontrollers</p>
+                <button class="collapsible">Embedded Game Console ("Simon Says")</button>
+                <div class="content">
+                    <ul>
+                        <li>Developed a fully functional interactive memory game on a microcontroller-based embedded platform using <strong>C</strong>.</li>
+                        <li>Designed a robust <strong>Finite State Machine (FSM)</strong> to manage complex game logic, including multiple game modes and user input validation.</li>
+                        <li>Integrated and controlled hardware peripherals including <strong>Joysticks, Accelerometers, and LCD displays</strong> via low-level I/O interfaces.</li>
                     </ul>
                 </div>
             </div>
@@ -110,9 +134,9 @@
                 <button class="collapsible">DeepFake Detection System (EfficientNet & Transfer Learning)</button>
                 <div class="content">
                     <ul>
-                        <li>Developed a robust DeepFake detection model using an <strong>EfficientNet-B0 CNN</strong> architecture and Transfer Learning to classify manipulated video frames.</li>
-                        <li>Engineered an aggressive <strong>Data Augmentation</strong> pipeline (JPEG compression, Gaussian Blur, Random Erasing) to mitigate the inter-database <strong>Generalization Gap</strong>.</li>
-                        <li>Optimized hyperparameters using <strong>Optuna</strong> and handled severe class imbalance via dynamic loss weighting and Youden's optimal threshold, improving cross-dataset AUC by nearly 40%.</li>
+                        <li>Developed a robust DeepFake detection model using an <strong>EfficientNet-B0 CNN</strong> architecture and Transfer Learning[cite: 137, 139].</li>
+                        <li>Engineered an aggressive <strong>Data Augmentation</strong> pipeline (JPEG compression, Gaussian Blur) to mitigate the inter-database <strong>Generalization Gap</strong>[cite: 428, 432, 433].</li>
+                        <li>Optimized hyperparameters using <strong>Optuna</strong>, improving cross-dataset AUC by nearly 40%[cite: 309, 455].</li>
                     </ul>
                 </div>
             </div>
@@ -129,118 +153,95 @@
                 </div>
             </div>
 
+            <div class="project">
+                <p>Biometric Signal Processing</p>
+                <button class="collapsible">Online Handwriting Recognition (ANN & DTW)</button>
+                <div class="content">
+                    <ul>
+                        <li>Developed a biometric recognition system for online handwritten trajectories using <strong>Dynamic Time Warping (DTW)</strong> and <strong>ANNs</strong>.</li>
+                        <li>Engineered a feature extraction pipeline selecting key kinematic descriptors (velocity, angle) and spatial heatmaps.</li>
+                        <li>Designed and trained a <strong>Multi-Layer Perceptron (MLP)</strong> achieving <strong>98.7% accuracy</strong> through rigorous cross-validation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>Computer Vision & Image Processing</p>
+                <button class="collapsible">Content-Based Image Retrieval (CBIR) System</button>
+                <div class="content">
+                    <ul>
+                        <li>Developed an image search engine in <strong>MATLAB</strong> capable of retrieving similar images based on visual content (color and texture).</li>
+                        <li>Implemented and compared <strong>Color Layout Descriptors (CLD)</strong> using DCT vs. Raw Pixel matching.</li>
+                        <li>Engineered a custom <strong>Texture Histogram Descriptor</strong> to improve classification accuracy for diverse datasets.</li>
+                    </ul>
+                </div>
+            </div>
+
           </section>
 
         <section id="skills" class="container">
-                    <h1>Technical Skills</h1>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <h3>Programming & Languages</h3>
-                            <div class="skill-tags">
-                                <span>Python</span>
-                                <span>C</span>
-                                <span>MATLAB</span>
-                                <span>VHDL / Verilog</span>
-                                <span>Assembly</span>
-                                <span>LaTeX</span>
-                            </div>
-                        </div>
-        
-                        <div class="skill-card">
-                            <h3>Electronics & FPGA</h3>
-                            <div class="skill-tags">
-                                <span>Xilinx Vivado</span>
-                                <span>Vitis HLS</span>
-                                <span>FPGAs (Artix-7/Zynq)</span>
-                                <span>Microcontrollers</span>
-                                <span>Sensors & I2C/SPI</span>
-                                <span>Digital Systems</span>
-                            </div>
-                        </div>
-        
-                        <div class="skill-card">
-                            <h3>RF & Telecommunications</h3>
-                            <div class="skill-tags">
-                                <span>CST Studio Suite</span>
-                                <span>ADS (Keysight)</span>
-                                <span>Signal Processing</span>
-                                <span>Network Telemetry</span>
-                                <span>Wireshark</span>
-                                <span>Antenna Design</span>
-                            </div>
-                        </div>
-        
-                        <div class="skill-card">
-                            <h3>AI & Software Tools</h3>
-                            <div class="skill-tags">
-                                <span>PyTorch / TensorFlow</span>
-                                <span>Computer Vision</span>
-                                <span>Machine Learning</span>
-                                <span>Git / GitHub</span>
-                                <span>Linux / Unix</span>
-                                <span>Unity 3D</span>
-                            </div>
-                        </div>
+            <h1>Technical Skills</h1>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming & Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span><span>C</span><span>MATLAB</span><span>VHDL</span><span>Assembly</span><span>LaTeX</span>
                     </div>
-                </section>
-             
-        </section>
-        <section id="about">
-            <div class="container">
-                <h1>About Me</h1>
-                <p>
-                    Telecommunications Engineer with a versatile background spanning <b>Signal Processing, Embedded Systems, RF, and Telematics</b>. 
-                    I combine technical proficiency in <b>Python, C, and FPGA development</b> with a strong ability to tackle multidisciplinary challenges. 
-                    Beyond engineering, I have honed my <b>leadership and cross-cultural communication skills</b> 
-                    through international experience in the <b>USA</b> and <b>technical sales</b> roles, 
-                    thriving in dynamic environments driven by innovation.
-                </p>
+                </div>
+                <div class="skill-card">
+                    <h3>Electronics & FPGA</h3>
+                    <div class="skill-tags">
+                        <span>Vivado</span><span>Vitis HLS</span><span>FPGAs</span><span>Microcontrollers</span><span>Sensors</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>RF & Telecommunications</h3>
+                    <div class="skill-tags">
+                        <span>CST Studio</span><span>ADS</span><span>Signal Processing</span><span>Wireshark</span><span>Antenna Design</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>AI & Software Tools</h3>
+                    <div class="skill-tags">
+                        <span>PyTorch / TensorFlow</span><span>Computer Vision</span><span>Machine Learning</span><span>Git</span><span>Linux</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-       <section id="education" class="container">
+        <section id="about">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>Telecommunications Engineer with a versatile background spanning Signal Processing, Embedded Systems, RF, and Telematics. I combine technical proficiency in Python, C, and FPGA development with a strong ability to tackle multidisciplinary challenges.</p>
+            </div>
+        </section>
+
+        <section id="education" class="container">
             <h1>Education Path</h1>
-            
             <div class="timeline">
-                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2025 - 2027 (Expected)</span>
                         <h3>M.Sc. in Telecommunication Engineering</h3>
                         <h4>Universidad Autónoma de Madrid (UAM)</h4>
-                        <p>
-                            Comprehensive training in <strong>Signal Processing, FPGAs, Electronics, RF and Advanced Communication Systems</strong>.
-                            <br>
-                            <strong>Key Coursework:</strong> Hardware/Software Co-design (VHDL), Network Planning & Dimensioning, Advanced Signal Processing.
-                        </p>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2021 - 2025</span>
-                        <h3>B.Sc. in Service Engineering & Telecom. Technologies</h3>
+                        <h3>B.Sc. in Telecom. Technologies</h3>
                         <h4>Universidad Autónoma de Madrid (UAM)</h4>
-                        <p>
-                            Comprehensive training in Telematics, RF, Signal Processing and Electronics.
-                            <br>
-                            <strong>Key Coursework:</strong> Artificial Intelligence (AI), RF & Microwave Engineering, Embedded Systems (C), Computer Networks.
-                        </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
                 <h1>Contact</h1>
-                <p>
-                    For any questions or inquiries, please do not hesitate to contact <b>mario.piqueras.miro@gmail.com</b>
-                </p>
+                <p>For any questions or inquiries: <b>mario.piqueras.miro@gmail.com</b></p>
             </div>
         </section>
     </main>
