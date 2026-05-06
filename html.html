@@ -18,6 +18,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .timeline {
+            position: relative;
+        }
+        /* Ajustamos el inicio y final de la línea gris para que no sobresalga de los puntos amarillos */
+        .timeline::before {
+            top: 25px !important; 
+            bottom: 25px !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,7 +36,6 @@
             <ul>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#soft-skills">Soft Skills</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#education">Education Path</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -241,7 +251,12 @@
           </section>
 
         <section id="skills" class="container">
-            <h1>Technical Skills</h1>
+            <h1>Skills</h1>
+            
+            <div class="project-branch" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                <h2 style="color: #008080; border-bottom: 2px solid #008080; padding-bottom: 5px;"><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+            </div>
+            
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>Programming & Languages</h3>
@@ -268,22 +283,32 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="soft-skills" class="container">
-            <h1>Soft Skills & International Experience</h1>
+            <div class="project-branch" style="margin-top: 3rem; margin-bottom: 1.5rem;">
+                <h2 style="color: #008080; border-bottom: 2px solid #008080; padding-bottom: 5px;"><i class="fas fa-globe-americas"></i> Soft Skills & International Experience</h2>
+            </div>
+
             <div class="skills-grid">
-                <div class="skill-card" style="padding: 1.5rem;">
-                    <h3 style="margin-bottom: 0.5rem; color: #008080;"><i class="fas fa-globe-americas"></i> Cross-Cultural Collaboration</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.5;">Three consecutive years working in the United States within a multicultural environment. Proven ability to integrate seamlessly into diverse teams and communicate effectively in a fully immersive English setting <strong>(Fluent/C1 Level)</strong>.</p>
+                <div class="skill-card">
+                    <h3>Cross-Cultural Collaboration</h3>
+                    <div class="skill-tags">
+                        <span>English C1</span><span>Multicultural Teams</span><span>US Experience</span>
+                    </div>
+                    <p style="font-size: 0.9rem; line-height: 1.4; margin-top: 12px;">Three consecutive years working in the US. Proven ability to integrate into diverse teams and communicate effectively in a fully immersive English setting.</p>
                 </div>
-                <div class="skill-card" style="padding: 1.5rem;">
-                    <h3 style="margin-bottom: 0.5rem; color: #008080;"><i class="fas fa-exchange-alt"></i> Extreme Adaptability</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.5;">Thrive in dynamic, fast-paced environments far from home. Accustomed to stepping out of my comfort zone, rapidly adapting to new responsibilities, schedules, and cultural workflows with a proactive attitude.</p>
+                <div class="skill-card">
+                    <h3>Extreme Adaptability</h3>
+                    <div class="skill-tags">
+                        <span>Fast-paced</span><span>Proactive</span><span>Resilience</span>
+                    </div>
+                    <p style="font-size: 0.9rem; line-height: 1.4; margin-top: 12px;">Thrive in dynamic environments far from home. Accustomed to rapidly adapting to new responsibilities, schedules, and workflows with a positive attitude.</p>
                 </div>
-                <div class="skill-card" style="padding: 1.5rem;">
-                    <h3 style="margin-bottom: 0.5rem; color: #008080;"><i class="fas fa-users"></i> Leadership & Teamwork</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.5;">Strong background in managing group dynamics, conflict resolution, and leading activities in high-energy international camp settings, translating into excellent teamwork capabilities for complex engineering projects.</p>
+                <div class="skill-card">
+                    <h3>Leadership & Teamwork</h3>
+                    <div class="skill-tags">
+                        <span>Group Dynamics</span><span>Mentoring</span><span>Conflict Resolution</span>
+                    </div>
+                    <p style="font-size: 0.9rem; line-height: 1.4; margin-top: 12px;">Strong background in managing group dynamics and leading activities in high-energy international settings, translating into excellent engineering teamwork.</p>
                 </div>
             </div>
         </section>
